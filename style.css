@@ -473,6 +473,16 @@ img {
   max-width: 580px;
 }
 
+.assurance-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0b78ed;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
 .assurance-title {
   font-size: clamp(26px, 2.7vw, 36px);
   font-weight: 800;
@@ -529,6 +539,35 @@ img {
 
 .assurance-card.card-blue {
   background-color: #067df0;
+}
+
+/* Step Badge */
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13.5px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.card-light .step-badge {
+  background-color: rgba(11, 120, 237, 0.12);
+  color: #0b78ed;
+}
+
+.card-navy .step-badge {
+  background-color: rgba(15, 182, 250, 0.22);
+  color: #0fb6fa;
+}
+
+.card-blue .step-badge {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: #ffffff;
 }
 
 /* Icon Wrap */
@@ -1944,6 +1983,168 @@ img {
 }
 
 /* ═══════════════════════════════════════════════════
+   WHY DUBAI HOMEOWNERS RELY ON US (Staggered Photo Cards)
+═══════════════════════════════════════════════════ */
+.rely-section {
+  padding: 105px 24px 125px;
+  background-color: #ffffff;
+  border-top: 1px solid #edf2f7;
+}
+
+.rely-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 58px;
+}
+
+.rely-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #0b78ed;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.rely-title {
+  font-size: clamp(28px, 3.2vw, 42px);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.22;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+
+.rely-subtitle {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.7;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+/* 4 Staggered Floating Cards Grid */
+.rely-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.rely-card {
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Stagger Effect (from reference image) */
+.rely-card-elevated {
+  margin-top: 0;
+}
+
+.rely-card-offset {
+  margin-top: 42px;
+}
+
+.rely-card-inner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4.4;
+  min-height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+  background-color: #0b1528;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease;
+}
+
+.rely-card:hover .rely-card-inner {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 50px rgba(15, 23, 42, 0.22);
+}
+
+.rely-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.rely-card:hover .rely-card-img {
+  transform: scale(1.08);
+}
+
+/* Bottom Dark Vignette Gradient Overlay for readability */
+.rely-card-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 21, 40, 0.05) 0%,
+    rgba(11, 21, 40, 0.3) 40%,
+    rgba(11, 21, 40, 0.88) 72%,
+    #0b1528 100%
+  );
+  pointer-events: none;
+}
+
+/* Card Content Floating at Bottom */
+.rely-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 26px 22px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rely-icon-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(15, 182, 250, 0.18);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(15, 182, 250, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+
+.rely-card:hover .rely-icon-wrap {
+  background: rgba(15, 182, 250, 0.32);
+  transform: scale(1.08);
+  border-color: #0fb6fa;
+}
+
+.rely-card-title {
+  font-size: 18.5px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.28;
+  letter-spacing: -0.2px;
+  transition: color 0.25s ease;
+}
+
+.rely-card:hover .rely-card-title {
+  color: #0fb6fa;
+}
+
+.rely-card-text {
+  font-size: 13px;
+  color: #cbd5e1;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+/* ═══════════════════════════════════════════════════
    RESPONSIVE BREAKPOINTS
 ═══════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
@@ -2013,6 +2214,13 @@ img {
   }
   .guarantee-grid {
     column-gap: 40px;
+  }
+  .rely-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  .rely-card-offset {
+    margin-top: 24px;
   }
 }
 
@@ -2146,6 +2354,20 @@ img {
     flex-direction: column;
     gap: 8px;
     text-align: center;
+  }
+  .rely-section {
+    padding: 70px 16px 85px;
+  }
+  .rely-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .rely-card-offset {
+    margin-top: 0;
+  }
+  .rely-card-inner {
+    aspect-ratio: 3 / 3.8;
+    min-height: 380px;
   }
 }
 
@@ -2712,3 +2934,209 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* ═══════════════════════════════════════════════════
+   STANDARDS SECTION: WHY WE ARE DIFFERENT
+   (Exact Layout with Featured Photo Card & Blue Theme)
+═══════════════════════════════════════════════════ */
+.standards-section {
+  padding: 95px 24px 105px;
+  background-color: #f7faff;
+  position: relative;
+}
+
+.standards-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 56px;
+}
+
+.standards-pretitle {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--sky-blue);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 12px;
+}
+
+.standards-title {
+  font-size: clamp(28px, 3.4vw, 42px);
+  font-weight: 800;
+  color: #0c163b;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+
+.standards-desc {
+  font-size: 14.5px;
+  color: #64748b;
+  line-height: 1.68;
+}
+
+/* 6-Card Grid (3x2 Layout matching reference image) */
+.standards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.standard-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: 1px solid #edf2f7;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  padding: 36px 26px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 360px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.standard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15, 182, 250, 0.12);
+  border-color: rgba(15, 182, 250, 0.4);
+}
+
+.standard-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--sky-blue);
+  background-color: rgba(15, 182, 250, 0.1);
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+}
+
+.standard-card-title {
+  font-size: 18.5px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.35;
+  margin-bottom: 12px;
+  letter-spacing: -0.2px;
+}
+
+.standard-card-desc {
+  font-size: 13.5px;
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.standard-card-bottom {
+  margin-top: 28px;
+}
+
+.standard-btn-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--sky-blue);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  box-shadow: 0 6px 18px rgba(15, 182, 250, 0.35);
+  text-decoration: none;
+}
+
+.standard-btn-circle:hover {
+  background-color: var(--sky-blue-hover);
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(15, 182, 250, 0.5);
+  color: #ffffff;
+}
+
+/* ─── Featured Photo Card with Blue Gradient ─── */
+.standard-card-featured {
+  background-color: #0b78ed;
+  border: none;
+  box-shadow: 0 16px 40px rgba(11, 120, 237, 0.28);
+}
+
+.standard-featured-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.standard-featured-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 120, 237, 0.45) 0%,
+    rgba(11, 120, 237, 0.88) 55%,
+    rgba(14, 60, 160, 0.98) 100%
+  );
+  z-index: 2;
+}
+
+.standard-card-featured .standard-card-top,
+.standard-card-featured .standard-card-bottom {
+  position: relative;
+  z-index: 3;
+}
+
+.standard-tag-white {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+}
+
+.standard-card-featured .text-white {
+  color: #ffffff;
+}
+
+.standard-card-featured .text-white-sub {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-circle-white {
+  background-color: #ffffff;
+  color: #0b78ed;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.btn-circle-white:hover {
+  background-color: #f1f5f9;
+  color: #075bb5;
+  transform: scale(1.08);
+}
+
+/* Responsive Rules for Standards Section */
+@media (max-width: 1024px) {
+  .standards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .standards-section {
+    padding: 60px 18px;
+  }
+  .standards-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .standard-card {
+    min-height: auto;
+    padding: 30px 22px 26px;
+  }
+}
+
