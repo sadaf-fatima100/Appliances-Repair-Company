@@ -118,30 +118,5 @@ document.addEventListener('DOMContentLoaded', () => {
       stripCardsWrapper.scrollBy({ left: 200, behavior: 'smooth' });
     });
   }
-
-  // Live Dubai Neighborhood Repair Ticker Rotation
-  const tickerText = document.getElementById('tickerText');
-  const heroLiveTicker = document.getElementById('heroLiveTicker');
-  if (tickerText && heroLiveTicker) {
-    const dubaiUpdates = [
-      "📍 Dubai Marina: Samsung Front-Load Washer Repaired (6m ago)",
-      "📍 Arabian Ranches: Bosch Double-Door Refrigerator Repaired (14m ago)",
-      "📍 Downtown Dubai: Siemens Dishwasher Diagnostic Completed (22m ago)",
-      "📍 Palm Jumeirah: Miele Cooking Range Gas Burner Fixed (31m ago)",
-      "📍 JVC (Jumeirah Village): LG Dryer Heating Element Replaced (42m ago)",
-      "📍 Dubai Hills Estate: Whirlpool Built-in Fridge Serviced (55m ago)"
-    ];
-    let updateIdx = 0;
-    setInterval(() => {
-      heroLiveTicker.style.opacity = '0';
-      heroLiveTicker.style.transform = 'translateY(4px)';
-      setTimeout(() => {
-        updateIdx = (updateIdx + 1) % dubaiUpdates.length;
-        tickerText.textContent = dubaiUpdates[updateIdx];
-        heroLiveTicker.style.opacity = '1';
-        heroLiveTicker.style.transform = 'translateY(0)';
-      }, 400);
-    }, 4800);
-  }
 });
 
