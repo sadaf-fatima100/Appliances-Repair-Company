@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repair Services — Home Fix Heroes</title>
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="services-page-body">
+
+  <!-- ═══════════════════════════════════════════════════
+       TOP NAVIGATION BAR
+  ═══════════════════════════════════════════════════ -->
+  <header class="navbar navbar-solid">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3L2 11h3v10h5v-5h4v5h5V11h3L12 3z" fill="#0fb6fa"/>
+            <rect x="10.5" y="16" width="3" height="5" rx="0.8" fill="#142259"/>
+          </svg>
+        </span>
+        <span class="logo-name">Home Fix Heroes</span>
+      </a>
+
+      <!-- Center Links -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="services.html" class="nav-item active">Services</a>
+        <a href="index.html#about" class="nav-item">About Us</a>
+        <a href="index.html#guarantee" class="nav-item">Guarantees</a>
+        <a href="index.html#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- Right 24H Badge -->
+      <div class="nav-right">
+        <span class="pulse-dot"></span>
+        <span class="nav-badge-text">24 Hour Services</span>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div class="mobile-dropdown" id="mobileDropdown">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#guarantee">Guarantees</a>
+      <a href="index.html#contact">Contact</a>
+      <div class="mobile-badge">
+        <span class="pulse-dot"></span>
+        <span>24 Hour Services</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════
+       HERO SECTION (Exact Layout from Reference Image)
+  ═══════════════════════════════════════════════════ -->
+  <section class="service-hero">
+    <!-- Dark Blue Gradient Overlay on Background Image -->
+    <div class="service-hero-overlay"></div>
+
+    <div class="service-hero-content">
+      <!-- Blue Pill Tag -->
+      <div class="service-hero-badge">
+        <span>GADGET &amp; APPLIANCE REPAIR SERVICES</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="service-hero-title">
+        Trusted Gadget &amp;<br />
+        Repair Services.
+      </h1>
+
+      <!-- Description Subtext -->
+      <p class="service-hero-desc">
+        Our vans are fitted with high precision diagnostic units and genuine spare parts which will resolve device and home appliance problems safely, easily and professionally.
+      </p>
+
+      <!-- CTA Button -->
+      <a href="tel:+18005550199" class="btn-blue-pill">
+        <span>READ MORE</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       SERVICES HORIZONTAL STRIP (Attached / Docked to Hero)
+  ═══════════════════════════════════════════════════ -->
+  <section class="services-strip-section">
+    <div class="services-strip-container">
+
+      <!-- Left Accent Box (Vibrant Brand Blue) -->
+      <div class="strip-accent-box">
+        <h3 class="strip-accent-title">Services</h3>
+        <p class="strip-accent-desc">
+          Professional diagnostic testing and certified technician repair for your devices and appliances.
+        </p>
+      </div>
+
+      <!-- 5 Service Cards Grid / Row -->
+      <div class="strip-cards-wrapper">
+
+        <!-- Card 1: Laptop & Mac Repair -->
+        <a href="#who-we-are" class="strip-card">
+          <div class="strip-icon-circle">
+            <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="8" y="10" width="32" height="22" rx="3"/>
+              <path d="M4 36H44C44 36 41 32 38 32H10C7 32 4 36 4 36Z"/>
+              <!-- Checkmark / Gear in screen -->
+              <circle cx="24" cy="20" r="5"/>
+              <path d="M22 20L23.5 21.5L26.5 18.5"/>
+            </svg>
+          </div>
+          <h4 class="strip-card-title">Laptop &amp; Mac<br />Repair</h4>
+        </a>
+
+        <!-- Card 2: Computer Repair -->
+        <a href="#who-we-are" class="strip-card">
+          <div class="strip-icon-circle">
+            <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="6" width="36" height="26" rx="3"/>
+              <path d="M18 32L14 42H34L30 32"/>
+              <line x1="12" y1="42" x2="36" y2="42"/>
+              <!-- Crossed tools on screen -->
+              <path d="M19 14L29 24M29 14L19 24"/>
+            </svg>
+          </div>
+          <h4 class="strip-card-title">Computer<br />Repair</h4>
+        </a>
+
+        <!-- Card 3: Home Appliance Repair -->
+        <a href="#who-we-are" class="strip-card">
+          <div class="strip-icon-circle">
+            <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="10" y="6" width="28" height="36" rx="4"/>
+              <circle cx="24" cy="26" r="9"/>
+              <circle cx="24" cy="26" r="5"/>
+              <line x1="16" y1="12" x2="20" y2="12"/>
+              <circle cx="30" cy="12" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h4 class="strip-card-title">Appliance &amp;<br />Washer Repair</h4>
+        </a>
+
+        <!-- Card 4: Tablet & Watch Repair -->
+        <a href="#who-we-are" class="strip-card">
+          <div class="strip-icon-circle">
+            <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Tablet -->
+              <rect x="6" y="8" width="22" height="32" rx="3"/>
+              <circle cx="17" cy="36" r="1.2" fill="currentColor"/>
+              <!-- Smartwatch -->
+              <rect x="30" y="16" width="12" height="16" rx="2.5"/>
+              <path d="M33 16V10H39V16"/>
+              <path d="M33 32V38H39V32"/>
+            </svg>
+          </div>
+          <h4 class="strip-card-title">Tablet &amp; watch<br />Repair</h4>
+        </a>
+
+        <!-- Card 5: Smartphone Repair -->
+        <a href="#who-we-are" class="strip-card">
+          <div class="strip-icon-circle">
+            <svg width="34" height="34" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="12" y="6" width="24" height="36" rx="4"/>
+              <line x1="20" y1="10" x2="28" y2="10"/>
+              <circle cx="24" cy="38" r="1.5" fill="currentColor"/>
+              <!-- Wrench inside phone -->
+              <path d="M22 18L26 22M26 18L22 22"/>
+            </svg>
+          </div>
+          <h4 class="strip-card-title">Smartphone<br />Repair</h4>
+        </a>
+
+      </div>
+
+      <!-- Right Action Box (Arrows + MORE SERVICES Button) -->
+      <div class="strip-action-box">
+        <div class="strip-nav-arrows">
+          <button class="strip-arrow-btn" aria-label="Previous service">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+          </button>
+          <button class="strip-arrow-btn" aria-label="Next service">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </button>
+        </div>
+        <a href="#who-we-are" class="strip-more-btn">
+          <span>MORE SERVICES</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       "WHO WE ARE" / EXPERIENCE SECTION (Exact 2-Col Layout)
+  ═══════════════════════════════════════════════════ -->
+  <section class="who-section" id="who-we-are">
+    <div class="content-wrapper who-grid">
+
+      <!-- LEFT COLUMN: 3-Part Image Collage -->
+      <div class="who-media-col">
+        <div class="who-collage-frame">
+          <!-- Top Large Image: Smiling Technician Repairing -->
+          <div class="who-img-top">
+            <img
+              src="images/service-tech-smile.jpg"
+              alt="Certified repair technician smiling while testing device casing"
+              class="collage-main-img"
+            />
+          </div>
+
+          <!-- Bottom Row: Split Image + Circular Blue Seal Badge -->
+          <div class="who-img-bottom-row">
+            <!-- Bottom Left: Technician with Circuit / Diagnostic -->
+            <div class="who-img-bottom-left">
+              <img
+                src="images/service-tech-circuit.jpg"
+                alt="Technician repairing circuit components with precision safety glasses"
+                class="collage-sub-img"
+              />
+            </div>
+
+            <!-- Bottom Right: Circular Seal Stamp Badge in Blue Theme -->
+            <div class="who-seal-badge-wrap">
+              <img
+                src="images/service-seal-badge-blue.svg"
+                alt="Leading Repair Agency Since 2001 - Certified Seal Badge"
+                class="collage-seal-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Content + Inset Feature Box + Action Row -->
+      <div class="who-content-col">
+        <!-- Tag -->
+        <div class="who-tag-badge">
+          <span>WHO WE ARE</span>
+        </div>
+
+        <!-- Big Headline -->
+        <h2 class="who-headline">
+          Over 30,000 gadget repair<br />
+          since year of 2001
+        </h2>
+
+        <!-- Paragraph Description -->
+        <p class="who-lead-text">
+          Gadget repair services involve the professional repair and maintenance of electronic devices and gadgets, including but not limited to the smartphones, tablets, laptops, other consumer electronics.
+        </p>
+
+        <!-- Inset Feature Box (Tech Photo + 4 Checklist Items) -->
+        <div class="who-inset-card">
+          <!-- Left: Small Technician Photo at Bench -->
+          <div class="who-inset-img-wrap">
+            <img
+              src="images/service-tech-desk.jpg"
+              alt="Technician working at repair workbench with precision tools"
+              class="who-inset-img"
+            />
+          </div>
+
+          <!-- Right: 4 Checklist Items with Blue Accent Badges -->
+          <div class="who-checklist">
+            <!-- Item 1 -->
+            <div class="checklist-item">
+              <span class="check-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </span>
+              <span class="check-label">60 Day Warranty</span>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="checklist-item">
+              <span class="check-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </span>
+              <span class="check-label">Premium Parts</span>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="checklist-item">
+              <span class="check-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </span>
+              <span class="check-label">Expert Technician</span>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="checklist-item">
+              <span class="check-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </span>
+              <span class="check-label">Affordable Price</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Action Row: READ MORE Button + Phone Badge -->
+        <div class="who-action-row">
+          <!-- CTA Button -->
+          <a href="tel:+18005550199" class="btn-blue-pill btn-action-pill">
+            <span>READ MORE</span>
+          </a>
+
+          <!-- Phone CTA Badge -->
+          <div class="who-phone-badge">
+            <div class="who-phone-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1.01A11.36 11.36 0 0 1 8.57 3.9c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.52c0-.55-.45-1-.99-1z"/>
+              </svg>
+            </div>
+            <div class="who-phone-details">
+              <span class="who-phone-lead">Call us anytime</span>
+              <a href="tel:0318148965" class="who-phone-number">0318 148 965</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Floating Scroll-To-Top Button in Brand Blue Theme -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- ═══════════════════════════════════════════════════
+       SITE FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer class="site-footer" id="contact">
+    <div class="content-wrapper footer-grid">
+      <div class="footer-col brand-col">
+        <div class="nav-logo">
+          <span class="logo-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3L2 11h3v10h5v-5h4v5h5V11h3L12 3z" fill="#0fb6fa"/>
+              <rect x="10.5" y="16" width="3" height="5" rx="0.8" fill="#142259"/>
+            </svg>
+          </span>
+          <span class="logo-name">Home Fix Heroes</span>
+        </div>
+        <p class="brand-desc">
+          Your reliable nationwide partner for residential repairs, maintenance, and emergency improvements.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Laptop &amp; Mac Repair</a></li>
+          <li><a href="services.html">Computer Repair</a></li>
+          <li><a href="services.html">Appliance Repair</a></li>
+          <li><a href="services.html">Tablet &amp; Watch Repair</a></li>
+          <li><a href="services.html">Smartphone Repair</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#guarantee">Our Guarantees</a></li>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="index.html#contact">Contact Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact &amp; Hours</h4>
+        <p class="contact-line"><strong>Phone:</strong> 0318 148 965 / 1-800-555-0199</p>
+        <p class="contact-line"><strong>Email:</strong> help@homefixheroes.com</p>
+        <p class="contact-line"><strong>Hours:</strong> 24/7 Emergency Dispatch</p>
+        <p class="contact-line"><strong>Coverage:</strong> All US Metro Regions</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="content-wrapper bottom-row">
+        <p>© 2026 Home Fix Heroes. All rights reserved.</p>
+        <p>Crafted with precision matching original design specifications.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
